@@ -29,10 +29,6 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				else if (b == 9)
-				{
-					_putchar(36);
-				}
 			}
 			else if (c < 10)
 			{
@@ -43,10 +39,7 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				else if (b == 9)
-				{
-					_putchar(36);
-				}
+
 			}
 		++b;
 	}
