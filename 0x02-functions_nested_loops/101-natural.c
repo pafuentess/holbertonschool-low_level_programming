@@ -26,4 +26,5 @@ int main(void)
 		}
 	}
 	printf("%i\n", suma);
+	return (0);
 }
