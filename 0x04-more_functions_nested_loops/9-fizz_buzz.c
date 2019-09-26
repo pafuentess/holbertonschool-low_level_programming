@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
-* main - print and changes numbers
+* main - change number
+* Return: (0)
 */
 
 int main(void)
@@ -19,16 +19,17 @@ int main(void)
 			printf("FizzBuzz ");
 		}
 
-		else if (b == 0)
-		{
-			printf("Fizz ");
-		}
-
 		else if (c == 0)
 		{
-			printf("Buzz ");
+			if (a == 100)
+			{
+				printf("Buzz");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		}
-
 		else
 		{
 			printf("%d ", a);
@@ -36,4 +37,7 @@ int main(void)
 	}
 	printf("\n");
 	return (0);
+
 }
+
+
