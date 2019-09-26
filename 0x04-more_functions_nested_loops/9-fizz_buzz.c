@@ -30,6 +30,10 @@ int main(void)
 				printf("Buzz ");
 			}
 		}
+		else if (b == 0)
+		{
+			printf("Fizz ");
+		}
 		else
 		{
 			printf("%d ", a);
