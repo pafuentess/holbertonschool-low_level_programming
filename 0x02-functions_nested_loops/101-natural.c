@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
 * main - prints the add of multiples of
@@ -18,5 +18,6 @@ int main(void)
 		}
 	}
 	printf("%i\n", suma);
+
 	return (0);
 }
