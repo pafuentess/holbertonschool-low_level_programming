@@ -12,15 +12,7 @@ int main(void)
 
 	for (a = 1 ; a < 1024 ; ++a)
 	{
-		b = a % 3;
-		c = a % 5;
-
-		if (b == 0)
-		{
-			suma = suma + a;
-		}
-
-		else if (c == 0)
+		if ((a % 3 == 0) || (a % 5 == 0))
 		{
 			suma = suma + a;
 		}
