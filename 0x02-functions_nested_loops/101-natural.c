@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
-* main - prints the add of multiples of
+* main- prints the add of multiples of
 * 5 and 3.
-* Return (0)
+* Return: (0)
 */
 
 int main(void)
 {
-	int a, b, c, suma;
+	int a, suma;
 
 	for (a = 1 ; a < 1024 ; ++a)
 	{
