@@ -17,12 +17,12 @@ int main(void)
 
 		if (b == 0)
 		{
-			suma = suma + b;
+			suma = suma + a;
 		}
 
 		else if (c == 0)
 		{
-			suma = suma + c;
+			suma = suma + a;
 		}
 	}
 	printf("%i\n", suma);
