@@ -5,7 +5,7 @@
 * main - print and changes numbers
 */
 
-void main(void)
+int main(void)
 {
 	int a, b, c;
 
@@ -35,4 +35,5 @@ void main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
