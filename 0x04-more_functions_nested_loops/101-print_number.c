@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-/*
+/**
 * num_9 - prints number
 * @n: number to print
 */
@@ -9,6 +9,11 @@ void num_9(int n)
 {
 	_putchar(n + '0');
 }
+
+/**
+* mayor9 - prints a number <9
+*@n: number to print
+*/
 
 void mayor9(int n)
 {
@@ -21,6 +26,11 @@ void mayor9(int n)
 	_putchar(b + '0');
 }
 
+/**
+* mayor99 - print a number > 9
+* @n: number to print
+*/
+
 void mayor99(int n)
 {
 	int a, b, c;
@@ -31,6 +41,11 @@ void mayor99(int n)
 	mayor9(b);
 }
 
+/**
+* mayor999 - print a number > 999
+* @n: number to print
+*/
+
 void mayor999(int n)
 {
 	int a, b, c;
@@ -40,6 +55,11 @@ void mayor999(int n)
 	_putchar(a + '0');
 	mayor99(b);
 }
+
+/**
+* print_number - prints numbers
+*@n: number to print
+*/
 
 void print_number(int n)
 {
