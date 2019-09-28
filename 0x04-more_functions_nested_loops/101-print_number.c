@@ -33,7 +33,7 @@ void mayor9(int n)
 
 void mayor99(int n)
 {
-	int a, b, c;
+	int a, b;
 
 	a = n / 100;
 	b = n % 100;
@@ -48,7 +48,7 @@ void mayor99(int n)
 
 void mayor999(int n)
 {
-	int a, b, c;
+	int a, b;
 
 	a = n / 1000;
 	b = n % 1000;
