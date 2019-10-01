@@ -17,7 +17,7 @@ void puts_half(char *str)
 		++a;
 	}
 
-	b = a - 1;
+	b = a;
 
 	impar = b % 2;
 
