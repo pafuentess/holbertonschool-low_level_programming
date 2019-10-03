@@ -1,0 +1,22 @@
+#include "holberton.h"
+
+/**
+* string_toupper - change from lowercase to uppercase
+* @s: string to evaluate
+* Return: (s) string actualizado
+*/
+
+char *string_toupper(char *s)
+{
+	int a;
+
+	while (s[a] != '\0')
+	{
+		if (s[a] >= 'a' && s[a] <= 'z')
+		{
+			s[a] = s[a] - 32;
+		}
+		++a;
+	}
+	return (s);
+}
