@@ -12,9 +12,13 @@ char *cap_string(char *s)
 	int a;
 
 	a = 0;
+
 	while (s[a] != '\0')
 	{
-		if (s[a] == ' ' || s[a] == '\n')
+		if (s[a] == ' ' || s[a] == '\t' || s[a] == '\n' || s[a] == ','
+		|| s[a] == ';' || s[a] == '.' || s[a] == '!' || s[a] == '?'
+		|| s[a] == '"' || s[a] == '(' || s[a] == ')' || s[a] == '{'
+		|| s[a] == '}')
 		{
 			if (s[a + 1] >= 97 && s[a + 1] <= 122)
 			{
@@ -23,6 +27,5 @@ char *cap_string(char *s)
 		}
 		++a;
 	}
-
 	return (s);
 }
