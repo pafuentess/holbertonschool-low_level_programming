@@ -16,7 +16,7 @@ char *rot13(char *p)
 
 	for (a = 0 ; p[a] != '\0' ; a++)
 	{
-		for (b = 0 ; ini[b] <= '\0' ; b++)
+		for (b = 0 ; ini[b] < 52 ; b++)
 		{
 			if (p[a] == ini[b])
 			{
