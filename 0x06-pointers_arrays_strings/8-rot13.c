@@ -11,8 +11,8 @@ char *rot13(char *p)
 {
 	int a, b;
 
-	char ini[] = "AaBbCcDdEeFfGgHhIiJjKkLlMm";
-	char fin[] = "NnOoPpQqRrSsTtUuVvWwXxYyZz";
+	char ini[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char fin[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (a = 0 ; p[a] != '\0' ; a++)
 	{
