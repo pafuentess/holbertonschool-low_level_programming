@@ -22,6 +22,7 @@ char *rot13(char *p)
 			if (p[a] == ini[b])
 			{
 				p[a] = fin[b];
+				break;
 			}
 		}
 		a++;
