@@ -24,7 +24,7 @@ char *leet(char *s)
 				s[a] = num[b];
 			}
 		}
-		++a;
+
 	}
 	return (s);
 }
