@@ -21,7 +21,7 @@ char *rot13(char *p)
 		{
 			if (p[a] == inicio[b])
 			{
-				s[a] = fin[b];
+				p[a] = fin[b];
 				break;
 			}
 		}
