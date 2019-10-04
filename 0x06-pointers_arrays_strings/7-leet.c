@@ -1,30 +1,26 @@
 #include "holberton.h"
 
 /**
-* leet - code in 1337
-* @s: string to code
-* Return: (s) string codificado
+* leet - codes a string in 1337
+* @p: function parameter
+* Return: p
 */
 
-char *leet(char *s)
+char *leet(char *p)
 {
 	int a, b;
+	char ini[] = "AaEeTtLlOo";
+	char fin[] = "4433771100";
 
-	char maymin[] = "AaEeTtLlOo";
-	char num[] = "4433771100";
-
-	a = 0;
-
-	for (a = 0 ; s[a] != '\0' ; a++)
+	for (a = 0; p[a] != '\0'; a++)
 	{
-		for (b = 0 ; num[b] != '\0' ; a++)
+		for (b = 0; ini[b] != '\0'; b++)
 		{
-			if (s[a] == maymin[b])
+			if (p[a] == ini[b])
 			{
-				s[a] = num[b];
+				p[a] = fin[b];
 			}
 		}
-
 	}
-	return (s);
+	return (p);
 }
