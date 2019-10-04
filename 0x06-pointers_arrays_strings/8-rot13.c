@@ -14,7 +14,8 @@ char *rot13(char *p)
 	char ini[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char fin[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (a = 0 ; p[a] != '\0' ; a++)
+	a = 0;
+	while (p[a])
 	{
 		for (b = 0 ; ini[b] < 52 ; b++)
 		{
@@ -23,6 +24,7 @@ char *rot13(char *p)
 				p[a] = fin[b];
 			}
 		}
+		a++;
 	}
 
 	return (p);
