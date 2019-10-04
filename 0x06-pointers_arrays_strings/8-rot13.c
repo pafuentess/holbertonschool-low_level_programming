@@ -10,23 +10,22 @@
 char *rot13(char *p)
 {
 	int a, b;
-
-	char ini[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char fin[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char inicio[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
+	char fin[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 
 	a = 0;
+
 	while (p[a])
 	{
-		for (b = 0 ; ini[b] < 52 ; b++)
+		for (j = 0; j < 52; j++)
 		{
-			if (p[a] == ini[b])
+			if (p[a] == inicio[b])
 			{
-				p[a] = fin[b];
+				s[a] = fin[b];
 				break;
 			}
 		}
 		a++;
 	}
-
-	return (p);
+	return (s);
 }
