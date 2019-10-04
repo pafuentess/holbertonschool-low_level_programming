@@ -3,15 +3,15 @@
 /**
 * leet - code in 1337
 * @s: string to code
-* Return: string codificado
+* Return: (s) string codificado
 */
 
 char *leet(char *s)
 {
 	int a, b;
 
-	char maymin[] = "AaEeLlOoTt";
-	char num[] = "4433007711";
+	char maymin[] = "AaEeTtLlOo";
+	char num[] = "4433771100";
 
 	a = 0;
 
