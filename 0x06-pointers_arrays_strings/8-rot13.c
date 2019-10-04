@@ -17,7 +17,7 @@ char *rot13(char *p)
 
 	while (p[a])
 	{
-		for (j = 0; j < 52; j++)
+		for (b = 0; b < 52; b++)
 		{
 			if (p[a] == inicio[b])
 			{
