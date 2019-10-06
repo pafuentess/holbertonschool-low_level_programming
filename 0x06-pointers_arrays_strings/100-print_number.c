@@ -28,7 +28,7 @@ void print_number(int n)
 			if (a <= 9)
 			{
 				_putchar(a + '0');
-				c = a
+				c = a;
 			}
 			b = b * 10;
 		}
