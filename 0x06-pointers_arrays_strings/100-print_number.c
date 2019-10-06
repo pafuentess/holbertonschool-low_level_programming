@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <unistd.h>
 
 /**
 * print_number - print integer
