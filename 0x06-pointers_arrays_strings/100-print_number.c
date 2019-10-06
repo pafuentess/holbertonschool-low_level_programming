@@ -7,35 +7,43 @@
 
 void print_number(int n)
 {
-	int a, b, c, d, s[1000000];
+	int a, b, c;
 
-	d = 0;
-	a = n / 10;
-	b = n % 10;
-	if (a <= 9)
+	if (n == 0)
 	{
-		s[0] = b;
-		s[1] = a;
-		_putchar(s[1] + '0');
-		_putchar(s[0] + '0');
+		_putchar(48);
 	}
-	else
+	if (n < 0)
 	{
-		while (n > 9)
+		n = n * (-1);
+		_putchar('-');
+	}
+	while (n > 9)
+	{
+		a = n;
+		b = 1;
+		while (a > 9)
 		{
-			b = n % 10;
-			n = n / 10;
-			s[d] = b;
-			if (n <= 9)
+			a = a / 10;
+			if (a <= 9)
 			{
-				s[d + 1] = n;
+				_putchar(a + '0');
+				c = a
 			}
-			++d;
+			b = b * 10;
 		}
-		for (c = d ; c >= 0 ; c--)
+		n = n - (c * b);
+		if (n == 0)
 		{
-			_putchar(s[c] + '0');
 		}
-		_putchar('\n');
+		else if ((n / (b / 10)) < 1)
+		{
+			_putchar('0');
+			n = n * 10;
+		}
+	}
+	if (n > 0 && n <= 9)
+	{
+		_putchar(n + '0');
 	}
 }
