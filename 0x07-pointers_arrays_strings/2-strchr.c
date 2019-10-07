@@ -23,5 +23,5 @@ char *_strchr(char *s, char c)
 		++a;
 	}
 
-	return ('\0');
+	return (0);
 }
