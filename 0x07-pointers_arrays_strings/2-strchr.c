@@ -19,10 +19,9 @@ char *_strchr(char *s, char c)
 		if (s[a] == c)
 		{
 			return (s);
-			break;
-		}	
+		}
 		++a;
 	}
-	
+
 	return ('\0');
 }
