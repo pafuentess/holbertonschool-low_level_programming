@@ -32,18 +32,22 @@ char *_strdup(char *str)
 
 	len = _strlen(str);
 
-	if (len < 1)
+	if (str == NULL)
 	{
-		return ('\0');
+		return (NULL);
 	}
 
 	ar = malloc(len * sizeof(char));
 
+	if (ar == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0 ; i < len ; i++)
 	{
 		ar[i] = str[i];
-
-		free(ar);
-		return (ar);
 	}
+
+	return (ar);
 }
