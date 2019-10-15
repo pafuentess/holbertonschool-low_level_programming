@@ -49,5 +49,6 @@ char *_strdup(char *str)
 		ar[i] = str[i];
 	}
 
+	free(ar);
 	return (ar);
 }
