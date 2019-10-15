@@ -44,15 +44,13 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
+	ar = malloc(len1 + len2);
+	if (ar == NULL)
+	{
+		return (NULL);
+	}
 	else
 	{
-		ar = malloc((len1 + len2) * sizeof(char));
-
-		if (ar == NULL)
-		{
-			return (NULL);
-		}
-
 		for (i = 0 ; i < len1 ; i++)
 		{
 			ar[i] = s1[i];
@@ -60,7 +58,7 @@ char *str_concat(char *s1, char *s2)
 
 		d = i;
 
-		for (j = 0 ; j < len2 ; j++)
+		for (j = 0 ; j <= len2 ; j++)
 		{
 			ar[d + j] = s2[j];
 		}
