@@ -34,14 +34,24 @@ char *str_concat(char *s1, char *s2)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
-	if ((len1 + len2) < 1)
+	if (s1 == NULL)
 	{
-		return (0);
+		s1 = "";
+	}
+
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 
 	else
 	{
 		ar = malloc((len1 + len2) * sizeof(char));
+
+		if (ar == NULL)
+		{
+			return (NULL);
+		}
 
 		for (i = 0 ; i < len1 ; i++)
 		{
@@ -55,6 +65,6 @@ char *str_concat(char *s1, char *s2)
 			ar[d + j] = s2[j];
 		}
 	}
-	free(ar);
+
 	return (ar);
 }
