@@ -31,9 +31,6 @@ char *str_concat(char *s1, char *s2)
 	int i, d, j, len1, len2;
 	char *ar;
 
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
-
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -43,6 +40,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 
 	ar = malloc((len1 + len2 + 1));
 	if (ar == NULL)
