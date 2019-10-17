@@ -30,7 +30,7 @@ int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ar;
-	unsigned int len, i, j;
+	unsigned int len, i, j, len2;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = _strlen(s1);
 	len2 = _strlen(s2);
 
-	if (n >= s2)
+	if (n >= len2)
 		n = len2;
 
 	ar = malloc((len + n + 1) * sizeof(char));
