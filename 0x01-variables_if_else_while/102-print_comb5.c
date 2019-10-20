@@ -8,37 +8,35 @@
 
 int main(void)
 {
-	int i, j, k, z;
+	int i, j, a, b, c, d;
 
-	for (i = 0 ; i <= 9 ; i++)
+	i = 0;
+
+	while (i < 100)
 	{
-		for (j = 0 ; j <= 9 ; j++)
+		j = i + 1;
+
+		while (j < 100)
 		{
-			for (k = 0 ; k <= 9 ; k++)
+			a = i / 10;
+			b = i % 10;
+			c = j / 10 % 10;
+			d = j % 10;
+			putchar(a + '0');
+			putchar(b + '0');
+			putchar(' ');
+			putchar(c + '0');
+			putchar(d + '0');
+
+			if (i == 98)
 			{
-				if (k != i)
-					z = '0';
-				else
-					z = j + 1;
-				for (z = z ; z <= 9 ; z++)
-				{
-					if (i > j && k < z)
-					{
-					}
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(z + '0');
-					if (i == 9 && j == 8 && k == 9 && z == 9)
-					{
-					}
-					else
-						putchar(',');
-						putchar(' ');
-				}
+				break;
 			}
+			putchar(',');
+			putchar(' ');
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
