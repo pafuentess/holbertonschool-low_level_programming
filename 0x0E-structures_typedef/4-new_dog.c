@@ -23,25 +23,26 @@ int _strlen(char *s)
 }
 
 /**
-* _strncpy - write a string in other
-* @dest: string into copy
-* @src: string to copy
-* @n: number of charts to copy
-* Return: (dest): string modifie
+* _strcpy - copies the string
+* @dest: to copy
+* @src: from copy
+* Return: dest. value to return
 */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
 
-	for (i = 0; i < n && src[i] != '\0' ; i++)
+	int a, b;
+
+	a = 0;
+	while (src[a] != '\0')
 	{
-		dest[i] = src[i];
+		++a;
 	}
 
-	for (; i < n ; i++)
+	for (b = 0 ; b <= a ; b++)
 	{
-		dest[i] = '\0';
+		dest[b] = src[b];
 	}
 
 	return (dest);
@@ -85,8 +86,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 		return (NULL);
 	}
-	new_dog->name = _strncpy(new_dog->name, name, len1);
-	new_dog->owner = _strncpy(new_dog->owner, owner, len2);
+	new_dog->name = _strcpy(new_dog->name, name);
+	new_dog->owner = _strcpy(new_dog->owner, owner);
 
 	return (new_dog);
 }
