@@ -80,8 +80,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (copyowner == NULL)
 		return (NULL);
 
-	_strncpy(copyname, name, len1);
-	_strncpy(copyowner, owner, len2);
+	copyname = _strncpy(copyname, name, len1);
+	copyowner = _strncpy(copyowner, owner, len2);
 
 	return (new_dog);
 }
