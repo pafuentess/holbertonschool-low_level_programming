@@ -53,15 +53,15 @@ void printstring(va_list lista)
 
 void print_all(const char * const format, ...)
 {
-	va_list lista;
-	int i, j = 0;
-
 	op_t ops[] = {
 		{"c", printchar},
 		{"i", printint},
 		{"f", printfloat},
 		{"s", printstring},
 		{NULL, NULL} };
+
+	va_list lista;
+	int i, j = 0;
 
 	va_start(lista, format);
 	while (format != NULL && format[j] != '\0')
