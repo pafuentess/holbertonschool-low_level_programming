@@ -63,6 +63,9 @@ void print_all(const char * const format, ...)
 
 	va_list lista;
 	int i, j = 0;
+	char *ch1 = "";
+	char *ch2 = ", ";
+	char *ch3 = ch1;
 
 	va_start(lista, format);
 
@@ -73,14 +76,11 @@ void print_all(const char * const format, ...)
 		{
 			if (format[j] == *(ops[i].op))
 			{
+				printf("%s", ch3);
 				(ops[i].f)(lista);
+				ch3 = ch2;
 			}
 			i++;
-		}
-		if ((format[j] == 'c' || format[j] == 'i' || format[j] == 'f' ||
-			format[j] == 's') && format[j + 1] != '\0')
-		{
-			printf(", ");
 		}
 		j++;
 	}
