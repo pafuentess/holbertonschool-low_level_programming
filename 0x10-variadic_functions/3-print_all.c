@@ -58,12 +58,14 @@ void print_all(const char * const format, ...)
 		{"i", printint},
 		{"f", printfloat},
 		{"s", printstring},
-		{NULL, NULL} };
+		{NULL, NULL}
+	};
 
 	va_list lista;
 	int i, j = 0;
 
 	va_start(lista, format);
+
 	while (format != NULL && format[j] != '\0')
 	{
 		i = 0;
@@ -79,9 +81,9 @@ void print_all(const char * const format, ...)
 			format[j] == 's') && format[j + 1] != '\0')
 		{
 			printf(", ");
-		j++;
 		}
+		j++;
+	}
 	printf("\n");
 	va_end(lista);
-	}
 }
