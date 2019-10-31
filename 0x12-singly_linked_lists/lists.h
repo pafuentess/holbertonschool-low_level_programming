@@ -3,6 +3,15 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/**
+* struct list - Struct list
+*
+* @str: The operator
+* @len: The function associated
+* @next: next position
+*/
+
+
 typedef struct list
 {
 	char *str;
