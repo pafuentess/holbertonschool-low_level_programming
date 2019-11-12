@@ -42,6 +42,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	str = write(STDOUT_FILENO, buff, st);
 
+	if (st != str)
+		return (0);
+
 	return (str);
 }
 
